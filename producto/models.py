@@ -17,7 +17,7 @@ class Producto(models.Model):
     vencimiento = models.DateTimeField(blank=True, null=True)
 
     def __str__(self):
-        return self.nombre_de_producto
+        return self.nombredeproducto
 
 class Compra(models.Model):
     cantidad_de_producto = models.IntegerField()

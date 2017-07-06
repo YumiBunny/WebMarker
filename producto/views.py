@@ -8,4 +8,5 @@ def producto_list(request):
     productovar = Producto.objects.all()
     return render(request, 'producto/pag.html', {'producto': productovar})
 
-# Create your views here.
+def contacto(request):
+    return render(request, 'producto/contacto.html', {})

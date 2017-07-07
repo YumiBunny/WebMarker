@@ -40,7 +40,12 @@
 				<h2 class="title"> <a href="{% url 'views.productos' %}"> Productos </a> <h2>
 		    <div class="entry">
             <h2> {% for pro in producto %}
-                            • {{ pro.nombredeproducto }} <br>
+                            <br>• {{ pro.nombredeproducto }} <br>
+                             {{ pro.categoria }} <br>
+                             {{ pro.precio }} <br>
+                             {{ pro.stock }} <br>
+                             {{ pro.vencimiento }} <br><br>
+
                 {% endfor %} </h2>
 			</div>
 		  </div>

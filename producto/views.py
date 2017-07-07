@@ -10,3 +10,9 @@ def producto_list(request):
 
 def contacto(request):
     return render(request, 'producto/contacto.html', {})
+
+def productos(request):
+    productovar = Producto.objects.all()
+    return render(request, 'producto/productos.html', {'producto': productovar})
+
+

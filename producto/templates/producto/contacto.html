@@ -10,16 +10,16 @@
 </head>
 <body>
 	<div id="logo">
-		<h1><a href="#">Web Marker  </a></h1>		
+		<h1> </h1>		
 	</div>
 	<hr />
 	<!-- end #logo -->
 	<div id="header">
 		<div id="menu">
 			<ul>
-				<li><a href="#" class="first">Inicio</a></li>
-				<li class="current_page_item"><a href="#">Productos</a></li>
-				<li><a href="#">Contactos</a></li>
+				<li><a href="{% url 'views.home' %}" class="first">Inicio</a></li>
+				<li class="current_page_item"><a href="{% url 'views.productos' %}"</li>Productos</a></li>
+				<li><a href="{% url 'producto.views.contacto' %}">Contactos</a></li>
 			</ul>
 		</div>
 		<!-- end #menu -->

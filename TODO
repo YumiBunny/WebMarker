@@ -1,0 +1,14 @@
+Feedback
+--------
+
+El proyecto se ve muy bien, y han logrado que se muestre información de la base.
+
+Como para darle cierre, creo que hay algunas cosas que estaría bueno estén
+disponibles como para que la aplicación quede "terminada".
+
+TODO
+----
+
+* No mostrar el stock en la pantalla principal
+* Si se da click sobre un producto, ir a otra página en donde se muestre información adicional del mismo, como el stock
+* Hacer que el buscador efectivamente busque, mostrando solo los elementos que coinciden con la busqueda

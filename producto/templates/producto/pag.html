@@ -39,13 +39,12 @@
 		  <div class="post">
 				<h2 class="title"> <a href="{% url 'views.productos' %}"> Productos </a> <h2>
 		    <div class="entry">
-            <h2> {% for pro in producto %}
-                            <br>• {{ pro.nombredeproducto }} <br>
-                             {{ pro.categoria }} <br>
-                             {{ pro.precio }} <br>
-                             {{ pro.stock }} <br>
-                             {{ pro.vencimiento }} <br><br>
-
+                <h2>{% for pro in productos %}
+                          <a href="{% url 'views.datos' pk=pro.pk %}">  <br>• {{ pro.nombredeproducto }} </a>  <br>
+                           <br>  
+                             Categoria:{{ pro.categoria }} <br>
+                             precio:{{ pro.precio }} <br><br>
+                            
                 {% endfor %} </h2>
 			</div>
 		  </div>

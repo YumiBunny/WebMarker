@@ -1,4 +1,4 @@
- {% load staticfiles %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,11 +37,16 @@
 	<!-- end #header-wrapper -->
     <div id="page">
 		  <div class="post">
-				<h2 class="title"><a href="#"> Productos </a></h2>
+           <div id="datos">
+				<h2 class="title"><a href="#"> Datos del Producto. </a></h2>
 		    <div class="entry">
-            <h2>{% for pro in productos %}
-                            • {{ pro.nombredeproducto }} <br>
-                {% endfor %} </h2>
+                           <h2> • {{ producto.nombredeproducto }} <br>
+                             <br>
+                             Categoria:{{ producto.categoria }} <br>
+                             precio:{{ producto.precio }} <br>
+                             stock:{{ producto.stock }} <br>
+                             fecha de vencimiento:{{ producto.vencimiento }} <br> 
+                        <br><br><h2>
 			</div>
 		  </div>
     </div>
